@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black opacity-5"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
-        <div className="relative py-36 font-light  px-28">
+        <div className="relative py-36 font-light  lg:px-28 px-10 ">
           <h2 className="text-white md:text-6xl max-w-xl text-3xl  font-bold ">
             {movie ? movie.original_title || movie.name : ""}
           </h2>
