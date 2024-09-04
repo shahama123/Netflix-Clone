@@ -31,7 +31,7 @@ const Navbar = () => {
         scrolling ? "bg-black bg-opacity-75" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between px-10 py-6 text-white cursor-pointer">
+      <div className="flex items-center justify-between px-10 py-10 text-white cursor-pointer">
         <img
           className="lg:w-20 w-16"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png"

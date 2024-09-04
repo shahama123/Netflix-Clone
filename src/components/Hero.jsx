@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { FaPlay, FaPlus } from "react-icons/fa";
 import axios from "../Axios";
 import { imageUrl } from "../Constants/Constants";
+import logo from "../assets/image.png";
 
 const Hero = () => {
   const [movie, setMovie] = useState(null);
@@ -39,14 +40,21 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
         <div className="relative py-36 font-light  lg:px-28 px-10 ">
-          <h2 className="text-white md:text-6xl max-w-xl text-3xl  font-bold ">
+          <div className="flex gap-1 mb-2 ">
+            <img src={logo} alt="netflix image" className="w-5" />
+            <h1 className="text-white lg:text-base text-xs font-normal">
+              SERIES
+            </h1>
+          </div>
+
+          <h2 className="text-white md:text-5xl max-w-xl text-3xl  font-bold ">
             {movie ? movie.original_title || movie.name : ""}
           </h2>
-          <h4 className="text-white md:text-xl text-base pt-5 font-semibold">
+          <h4 className="text-white md:text-xl text-base pt-4 font-semibold">
             #1 in TV Shows Today
           </h4>
 
-          <p className="text-white md:text-base mt-5 md:max-w-md flex-wrap text-sm max-w-xl  ">
+          <p className="text-white lg:text-sm mt-4 md:max-w-md flex-wrap text-xs max-w-xl  ">
             {movie ? movie.overview : ""}
           </p>
 
