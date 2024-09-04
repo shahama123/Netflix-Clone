@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="bg-[#111111] text-[#646464]">
       <div className="px-4 py-10 sm:px-6 lg:px-32">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 lg:text-lg text-sm ">
           <a className="hover:underline" href="">
             FAQ
           </a>
@@ -54,7 +54,7 @@ const Footer = () => {
             Legal Notices
           </a>
         </div>
-        <p className="text-center text-xs sm:text-sm mt-8">
+        <p className="text-center lg:text-base text-base mt-8">
           © 2024 Shahama's Netflix clone. All rights reserved.
         </p>
       </div>

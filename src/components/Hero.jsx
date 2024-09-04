@@ -28,8 +28,11 @@ const Hero = () => {
           backgroundImage: `linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.61), #1111), url(${
             movie ? imageUrl + movie.backdrop_path : ""
           })`,
+
+          backgroundPosition: "center",
+          backgroundSize: "100% 100%",
         }}
-        className="bg-cover bg-top h-[100vh] relative pb-20"
+        className="bg-cover  bg-top w-full h-[100vh] relative pb-20"
       >
         {/* Dim the background image using a dark overlay */}
         <div className="absolute inset-0 bg-black opacity-5"></div>

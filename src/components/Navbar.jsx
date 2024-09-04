@@ -31,9 +31,9 @@ const Navbar = () => {
         scrolling ? "bg-black bg-opacity-75" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between px-16 py-6 text-white cursor-pointer">
+      <div className="flex items-center justify-between px-10 py-6 text-white cursor-pointer">
         <img
-          className="w-20"
+          className="lg:w-20 w-16"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png"
           alt="logo"
         />
@@ -48,9 +48,9 @@ const Navbar = () => {
 
         <div className="md:hidden" onClick={toggleMenu}>
           {isMenuOpen ? (
-            <IoIosClose className="text-3xl" />
+            <IoIosClose className="text-2xl" />
           ) : (
-            <RxHamburgerMenu className="text-3xl " />
+            <RxHamburgerMenu className="text-2xl " />
           )}
         </div>
       </div>
