@@ -33,16 +33,16 @@ const Hero = () => {
           backgroundPosition: "center",
           backgroundSize: "100% 100%",
         }}
-        className="bg-cover  bg-top w-full h-[100vh] relative pb-20"
+        className="bg-cover  bg-top w-full lg:h-[100vh] h-[80vh] relative pb-20"
       >
         {/* Dim the background image using a dark overlay */}
         <div className="absolute inset-0 bg-black opacity-5"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
-        <div className="relative py-36 font-light  lg:px-28 px-10 ">
+        <div className="relative lg:pt-36 lg:pb-20 pt-28 pb-20 font-light  lg:px-28 px-10 ">
           <div className="flex gap-1 mb-2 ">
             <img src={logo} alt="netflix image" className="w-5" />
-            <h1 className="text-white lg:text-base text-xs font-normal">
+            <h1 className="text-slate-200 lg:text-xs text-xs font-normal">
               SERIES
             </h1>
           </div>
