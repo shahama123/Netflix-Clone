@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
         <div className="relative lg:pt-36 lg:pb-20 pt-28 pb-20 font-light  lg:px-28 px-10 ">
-          <div className="flex gap-1 mb-2 ">
+          <div className="flex  mb-2 ">
             <img src={logo} alt="netflix image" className="w-5" />
             <h1 className="text-slate-200 lg:text-xs text-xs font-normal">
               SERIES
